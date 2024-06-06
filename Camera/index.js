@@ -10,7 +10,6 @@ let vid=navigator.mediaDevices.getUserMedia({video:true,audio:true}).then((strea
     video.srcObject=stream;
     video.addEventListener("loadedmetadata",()=>{
         video.play();
-        console.log(video);
 
     })
 })
